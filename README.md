@@ -8,7 +8,6 @@ Campus Recovery is a full-featured, production-ready MERN stack web application 
 - **Backend:** Node.js + Express.js + Socket.io (WebSockets) + Mongoose
 - **Database:** MongoDB with text indexes for rapid searching
 - **Authentication:** JSON Web Tokens (JWT) + Bcrypt password hashing
-- **Notifications:** Nodemailer (Transactional email notifications) + Socket.io (Real-time in-app alerts)
 
 ---
 
@@ -17,13 +16,11 @@ Campus Recovery is a full-featured, production-ready MERN stack web application 
 1. **User Authentication:** Student registration is restricted to authorized college email domains (e.g. `.edu` extensions).
 2. **Interactive Bulletins Board:** Browse reported items with instant keyword search, and filters for category, type (lost/found), and status.
 3. **Report Modules:** Forms to create lost or found posts with description, location, date, photos, and a custom security question (mandatory for found posts).
-4. **AI-Based Item Matching:** Instantly computes similarity scores between lost and found reports in the database using text similarity algorithms to recommend potential matches.
-5. **Secure Claim Verification:** Claimants must submit answers to the poster's security question. The founder reviews answers to approve or reject the claim.
-6. **QR Code Generator:** Every post has a unique QR code pointing to the item detail page for easy mobile scanning and sharing.
-7. **Real-time Alerting:** Immediate in-app notification popups using Socket.io for claim status updates (Approved/Rejected/Requested).
-8. **Email Notifications:** Automatic Nodemailer alerts fired for incoming claims or approvals (falls back to console logging if credentials are not configured).
-9. **Admin dashboard:** Admin portal to review system metrics, manage the user registry, and moderate posts.
-10. **Light & Dark Themes:** Sleek theme toggle styling saved in local storage.
+4. **Secure Claim Verification:** Claimants must submit answers to the poster's security question. The founder reviews answers to approve or reject the claim.
+5. **QR Code Generator:** Every post has a unique QR code pointing to the item detail page for easy mobile scanning and sharing.
+6. **Real-time Alerting:** Immediate in-app notification popups using Socket.io for claim status updates (Approved/Rejected/Requested).
+7. **Admin dashboard:** Admin portal to review system metrics, manage the user registry, and moderate posts.
+8. **Light & Dark Themes:** Sleek theme toggle styling saved in local storage.
 
 ---
 
